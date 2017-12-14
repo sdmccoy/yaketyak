@@ -1,0 +1,44 @@
+@import '../../../style/_vars.scss';
+
+.profile-container{
+  height: 45%;
+
+  *{
+    text-align: center;
+    width: 96%;
+    margin: 1% 2%;
+  }
+
+  .title{
+    background-color: $color-secondary;
+    margin: 0;
+    border-radius: .5em .5em 0 0;
+    width: 100%;
+
+    h5{
+      text-align: left;
+      width: 90%;
+      padding-left: 2%;
+      margin: 0;
+      color: $color-white;
+    }
+  }
+}
+
+.avatar-container{
+
+  img{
+    width: 50%;
+    height: 50%;
+    border-radius: 51%;
+    margin: 0 25%;
+  }
+}
+
+.profile-form{
+  margin: 0;
+  input, button{
+    width: 96%;
+    margin: 1% 2%;
+  }
+}

@@ -1,0 +1,67 @@
+@import '../../../style/_vars.scss';
+
+.chat-container{
+  position: relative;
+
+  .title{
+    background-color: $color-secondary;
+    border-radius: .5em .5em 0 0;
+
+    h5{
+      width: 90%;
+      color: $color-white;
+      padding-left: 1%;
+    }
+  }
+}
+
+.message-board{
+  overflow: auto;
+  height: 90%;
+}
+
+.current-user-message, .other-user-message{
+  box-shadow: 1px 1px 5px $color-secondary;
+  width: 98%;
+  margin: 1%;
+
+  img{
+    width: 50px;
+    height: 50px;
+    border-radius: 51%;
+    margin: 2%;
+  }
+
+  h4{
+    height: 25px;
+    width: 80%;
+    margin: 2%;
+  }
+
+  p{
+    width: 80%;
+    margin: 2%;
+  }
+
+  i{
+    width: 5%;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}
+
+.chat-submit{
+  position: absolute;
+  bottom: 0;
+  margin: 1% 0;
+
+  input{
+    width: 87%;
+    margin: 0 1%;
+
+  }
+  .send-message-button{
+    width: 8%;
+  }
+}

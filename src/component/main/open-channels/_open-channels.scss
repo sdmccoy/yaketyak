@@ -1,0 +1,33 @@
+@import '../../../style/_vars.scss';
+
+.open-channels-container{
+  height: 80%;
+  overflow: auto;
+  margin: 1% 0 0 0;
+  padding: 0;
+
+  .open-channel{
+    width: 98%;
+    margin: 1%;
+    box-shadow: 1px 1px 1px $color-tertiary;
+  }
+
+  .title{
+    background-color: $color-secondary;
+    width: 100%;
+
+    h5{
+      width: 88%;
+      padding-left: 2%;
+      color: $color-white;
+    }
+    i{
+      width: 10%;
+      cursor: pointer;
+      text-align: right;
+    }
+  }
+  h6{
+    font-style: italic;
+  }
+}

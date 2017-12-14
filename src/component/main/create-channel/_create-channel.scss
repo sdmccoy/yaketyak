@@ -1,0 +1,33 @@
+@import '../../../style/_vars.scss';
+
+.create-channel-container{
+  height: 12%;
+
+  .title{
+    background-color: $color-secondary;
+    border-radius: .5em .5em 0 0;
+
+    h5{
+      width: 90%;
+      padding-left: 2%;
+      color: $color-white;
+    }
+  }
+
+  .add-channel-button{
+    margin: 4% 2% !important;
+    width: 96% !important;
+  }
+}
+
+.add-channel-form{
+  margin: 0;
+  input, button{
+    width: 96%;
+    margin: 1% 2% !important;
+  }
+  .create-channel-button, .cancel-channel-button{
+    width: 96%;
+    margin: 1% 2% !important;
+  }
+}

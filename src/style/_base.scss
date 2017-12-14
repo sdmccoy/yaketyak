@@ -1,0 +1,63 @@
+@import "./_vars.scss";
+
+// html, body {position: relative;}
+head, script, link, style {display: none;}
+p {display: inline-block;}
+span,em,strong {display:inline;}
+em {font-style: italic;}
+strong {font-weight: bold;}
+
+body {
+  background: $color-white;
+  font-size: 16px;
+}
+
+blockquote {
+  border-left: $pad solid $color-lightgrey;
+}
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    font-size: 9/($i + 2) * 1em;
+  }
+}
+h5{
+  font-size: 1.25em;
+}
+
+label {
+  font-size: 1.25em;
+  font-weight: bolder;
+}
+//
+textarea, input {
+  padding: $pad;
+  border: 1px solid $color-grey;
+  resize: none;
+
+  &:focus {
+    border: 1px solid $color-darkgrey;
+  }
+  &::placeholder {
+    color: $color-grey;
+  }
+}
+
+button,input[type="submit"] {
+  background: $color-button;
+  padding: $pad;
+  border: none;
+  border-radius: $pad;
+
+  &:hover {
+    background: $color-hover;
+  }
+
+  &:active {
+    background: $color-active;
+  }
+}
+
+.clear-float{
+  clear: both;
+}

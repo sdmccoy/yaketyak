@@ -1,0 +1,23 @@
+@import '../../../style/_vars.scss';
+
+.update-message-form-container{
+  width: 95%;
+
+  form{
+    width: 90%;
+    margin: 0 1%;
+
+  }
+
+  .send-message-button{
+    width: 8%;
+  }
+}
+
+
+i#update-send.material-icons{
+  padding-left: 9px;
+  &:hover{
+    cursor: pointer;
+  }
+}

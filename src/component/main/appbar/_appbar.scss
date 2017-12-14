@@ -1,0 +1,19 @@
+@import '../../../style/_vars.scss';
+
+.appbar{
+  background-color: $color-primary;
+  box-shadow: 0px 1px 1px $color-tertiary;
+
+  i{
+    width: 10%;
+    text-align: left;
+    padding: 16px 0 0 20px;
+
+  }
+  h3{
+    width: 70%;
+    text-align: center;
+    padding: 12px 0 0 70px;
+    color: $color-white;
+  }
+}
