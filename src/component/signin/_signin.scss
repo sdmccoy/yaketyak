@@ -3,12 +3,31 @@
 .signin-container{
 
   *{
-    // margin: 0 0 1% 0;
+    margin: 0 0 2% 0;
+  }
+
+  h2{
+    width: 36%;
+    margin: 1% 30%;
+    text-align: center;
+    font-family: $font-main;
+    border: 1px solid $color-black;
+    border-radius: 5px;
+    background-color: $color-primary;
+    color: $color-white;
   }
 
   img{
-    width: 50%;
+    width: 40%;
     height: 50%;
-    margin: 0 25%;
+    margin: 1% 30%;
+  }
+
+  form{
+    width: 36%;
+    margin: 1% 30%;
+    text-align: center;
+    font-family: $font-main;
+    
   }
 }
