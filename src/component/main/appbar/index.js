@@ -1,5 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import yak from '../../../assets/yaksmall.png';
 //style
 import './_appbar.scss';
 
@@ -8,8 +9,8 @@ class Appbar extends React.Component{
   render(){
     return(
       <div className='appbar'>
-        <i className="material-icons">send</i>
-        <h3>Welcome to bluOrbit Chat, {this.props.user.nickname || this.props.user.userId}!</h3>
+        <img src={yak} />
+        <h3>Welcome to Yaketyak, {this.props.user.nickname || this.props.user.userId}!</h3>
       </div>
     );
   }
