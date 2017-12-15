@@ -6,7 +6,7 @@ import * as userActions from '../../action/user.js';
 //tracking
 import track from 'react-tracking';
 //assets
-import bluorbitlogo from '../../assets/bluorbitlogo.png';
+import yakBubble from '../../assets/yakbubble.png';
 //style
 import './_signin.scss';
 
@@ -60,7 +60,7 @@ class Signin extends React.Component{
 
     return(
       <div className='signin-container'>
-        <img src={bluorbitlogo} />
+        <img className='yak' src={yakBubble} />
         <h4>Create an account or signin.</h4>
         <form onSubmit={this.handleSubmit}>
           <input
