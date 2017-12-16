@@ -18,6 +18,11 @@
 .message-board{
   overflow: auto;
   height: 90%;
+
+  h5{
+    text-align: center;
+    padding: 5%;
+  }
 }
 
 .current-user-message, .other-user-message{
