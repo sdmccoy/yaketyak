@@ -1,7 +1,7 @@
 @import '../../../style/_vars.scss';
 
 .profile-container{
-  height: 45%;
+  height: 50%;
 
   *{
     text-align: center;
@@ -28,10 +28,10 @@
 .avatar-container{
 
   img{
-    width: 50%;
+    width: calc(100%/3);
     height: 50%;
     border-radius: 51%;
-    margin: 0 25%;
+    margin: 0 calc(100%/3);
   }
 }
 

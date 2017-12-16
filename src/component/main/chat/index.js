@@ -127,7 +127,7 @@ class Chat extends React.Component{
               </div>;
             })
             :
-            <h5>No previous messages, start a conversation!</h5>
+            <h5>Start yaking!</h5>
           }
         </div>
         <div className='chat-submit'>
