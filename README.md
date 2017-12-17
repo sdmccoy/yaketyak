@@ -1,9 +1,10 @@
-# Send Bird Chat Application
+# Yaketyak Chat Application
 
-<img src='./src/assets/sblogo.png' width='400px' height='200px'/>
+<img src='./src/assets/yaksmall.png' width='200px' height='200px'/>
 
 Front-End application utilizing the SendBird API to implement a live chat room.
 
+<img src='./src/assets/sblogo.png' width='200px' height='100px'/>
 
 [SendBird Site](https://sendbird.com/ "SendBird API")
 
@@ -42,7 +43,7 @@ Front-End application utilizing the SendBird API to implement a live chat room.
 ### Setup
 - Clone this repo from your terminal
 
-  `git clone https://github.com/sdmccoy/sbchat.git`
+  `git clone https://github.com/sdmccoy/yaketyak.git`
 
 - Install the dependencies via npm || yarn
 
@@ -96,12 +97,12 @@ Front-End application utilizing the SendBird API to implement a live chat room.
     - Yes, you can easily sign in as another user (for now)
 
 
-  - <img src='./src/assets/loginlp.png' width='400px' height='400px'/>
+  - <img src='./src/assets/loginlp.png' width='600px' height='400px'/>
 
 ### Main Landing Page
-- Application will redirect to the /main route and load the chat componenents
+- Application will redirect to the /main route and load the chat components
 
-- <img src='./src/assets/chatlp.png' width='900px' height='400px'/>
+- <img src='./src/assets/mainlp.png' width='900px' height='500px'/>
 
 - On load, the page will display
   - Dynamic welcome bar with nickname || userId (if no nickname)
