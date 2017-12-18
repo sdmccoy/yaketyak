@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css?family=Acme|Rajdhani');
 
 //main colors
 $color-primary: #45C2EF;
@@ -14,7 +15,10 @@ $color-font: #FFF;
 $color-border: #77797B;
 
 //fonts
-$font-main: 'Roboto', sans-serif;
+// $font-main: 'Roboto', sans-serif;
+$font-main: 'Acme', sans-serif;
+$font-msg: 'Rajdhani', sans-serif;
+
 $fontface-sans-serif: sans-serif;
 
 //error classes

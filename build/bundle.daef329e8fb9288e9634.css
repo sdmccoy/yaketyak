@@ -1,0 +1,307 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);@import url(https://fonts.googleapis.com/icon?family=Material+Icons);@import url(https://fonts.googleapis.com/css?family=Acme|Rajdhani);@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);@import url(https://fonts.googleapis.com/icon?family=Material+Icons);@import url(https://fonts.googleapis.com/css?family=Acme|Rajdhani);@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);@import url(https://fonts.googleapis.com/icon?family=Material+Icons);@import url(https://fonts.googleapis.com/css?family=Acme|Rajdhani);@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);@import url(https://fonts.googleapis.com/icon?family=Material+Icons);@import url(https://fonts.googleapis.com/css?family=Acme|Rajdhani);@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);@import url(https://fonts.googleapis.com/icon?family=Material+Icons);@import url(https://fonts.googleapis.com/css?family=Acme|Rajdhani);@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);@import url(https://fonts.googleapis.com/icon?family=Material+Icons);@import url(https://fonts.googleapis.com/css?family=Acme|Rajdhani);@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);@import url(https://fonts.googleapis.com/icon?family=Material+Icons);@import url(https://fonts.googleapis.com/css?family=Acme|Rajdhani);@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);@import url(https://fonts.googleapis.com/icon?family=Material+Icons);@import url(https://fonts.googleapis.com/css?family=Acme|Rajdhani);@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);@import url(https://fonts.googleapis.com/icon?family=Material+Icons);@import url(https://fonts.googleapis.com/css?family=Acme|Rajdhani);@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);@import url(https://fonts.googleapis.com/icon?family=Material+Icons);@import url(https://fonts.googleapis.com/css?family=Acme|Rajdhani);.signin-container * {
+  margin: 0 0 2% 0; }
+
+.signin-container h2 {
+  width: 36%;
+  margin: 1% 30%;
+  text-align: center;
+  font-family: "Acme", sans-serif;
+  border-radius: 5px;
+  background-color: #45C2EF;
+  color: #fff;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+
+.signin-container img {
+  width: 40%;
+  height: 50%;
+  margin: 1% 30%; }
+
+.signin-container form {
+  width: 36%;
+  margin: 1% 30%;
+  text-align: center;
+  font-family: "Acme", sans-serif; }
+.appbar {
+  background-color: #45C2EF;
+  box-shadow: 0px 1px 1px #ADAB7A; }
+  .appbar img {
+    width: 6%;
+    text-align: left;
+    padding: 7px 0 5px 24px; }
+  .appbar h3 {
+    width: 70%;
+    text-align: center;
+    padding: 12px 0 0 225px;
+    color: #fff;
+    font-size: 2.8em;
+    text-shadow: 2px 1px 1px #473421; }
+.create-channel-container {
+  height: 12%; }
+  .create-channel-container .title {
+    background-color: #45E3F2;
+    border-radius: .5em .5em 0 0; }
+    .create-channel-container .title h5 {
+      width: 90%;
+      padding-left: 2%;
+      color: #fff; }
+  .create-channel-container .add-channel-button {
+    margin: 4% 2% !important;
+    width: 96% !important; }
+
+.add-channel-form {
+  margin: 0; }
+  .add-channel-form input, .add-channel-form button {
+    width: 96%;
+    margin: 1% 2% !important; }
+  .add-channel-form .create-channel-button, .add-channel-form .cancel-channel-button {
+    width: 96%;
+    margin: 1% 2% !important; }
+.open-channels-container {
+  height: 80%;
+  overflow: auto;
+  margin: 1% 0 0 0;
+  padding: 0; }
+  .open-channels-container .open-channel {
+    width: 98%;
+    margin: 1%;
+    box-shadow: 1px 1px 1px #ADAB7A; }
+  .open-channels-container .title {
+    background-color: #45E3F2;
+    width: 100%; }
+    .open-channels-container .title h5 {
+      width: 88%;
+      padding-left: 2%;
+      color: #fff; }
+    .open-channels-container .title i {
+      width: 10%;
+      cursor: pointer;
+      text-align: right; }
+  .open-channels-container h6 {
+    font-style: italic;
+    padding: 5%; }
+.profile-container {
+  height: 50%; }
+  .profile-container * {
+    text-align: center;
+    width: 96%;
+    margin: 1% 2%; }
+  .profile-container .title {
+    background-color: #45E3F2;
+    margin: 0;
+    border-radius: .5em .5em 0 0;
+    width: 100%; }
+    .profile-container .title h5 {
+      text-align: left;
+      width: 90%;
+      padding-left: 2%;
+      margin: 0;
+      color: #fff; }
+
+.avatar-container img {
+  width: calc(100%/3);
+  height: 50%;
+  border-radius: 51%;
+  margin: 0 calc(100%/3); }
+
+.profile-form {
+  margin: 0; }
+  .profile-form input, .profile-form button {
+    width: 96%;
+    margin: 1% 2%; }
+.update-message-form-container {
+  width: 95%; }
+  .update-message-form-container form {
+    width: 90%;
+    margin: 0 1%; }
+  .update-message-form-container .send-message-button {
+    width: 8%; }
+
+i#update-send.material-icons {
+  padding-left: 9px; }
+  i#update-send.material-icons:hover {
+    cursor: pointer; }
+.chat-container {
+  position: relative; }
+  .chat-container .title {
+    background-color: #45E3F2;
+    border-radius: .5em .5em 0 0; }
+    .chat-container .title h5 {
+      width: 90%;
+      color: #fff;
+      padding-left: 1%; }
+
+.message-board {
+  overflow: auto;
+  height: 90%; }
+  .message-board h5 {
+    text-align: center;
+    padding: 5%; }
+  .message-board p {
+    font-family: "Rajdhani", sans-serif; }
+
+.current-user-message, .other-user-message {
+  box-shadow: 1px 1px 5px #45E3F2;
+  width: 98%;
+  margin: 1%; }
+  .current-user-message img, .other-user-message img {
+    width: 50px;
+    height: 50px;
+    border-radius: 51%;
+    margin: 2%; }
+  .current-user-message h4, .other-user-message h4 {
+    height: 25px;
+    width: 80%;
+    margin: 2%; }
+  .current-user-message p, .other-user-message p {
+    width: 80%;
+    margin: 2%; }
+  .current-user-message i, .other-user-message i {
+    width: 5%; }
+    .current-user-message i:hover, .other-user-message i:hover {
+      cursor: pointer; }
+
+.chat-submit {
+  position: absolute;
+  bottom: 0;
+  margin: 1% 0; }
+  .chat-submit input {
+    width: 87%;
+    margin: 0 1%; }
+  .chat-submit .send-message-button {
+    width: 8%; }
+.participant-list-container {
+  height: 50%; }
+  .participant-list-container .title {
+    background-color: #45E3F2; }
+    .participant-list-container .title h5 {
+      width: 88%;
+      padding-left: 2%;
+      color: #fff; }
+    .participant-list-container .title i {
+      width: 8%;
+      text-align: right; }
+  .participant-list-container h6 {
+    font-style: italic;
+    padding: 5%; }
+.main-container {
+  width: 100%;
+  height: 771px; }
+
+.aside-left, .aside-right, .chat-container {
+  box-shadow: 1px 1px 15px #ADAB7A;
+  border-radius: .5em .5em 0 0; }
+
+.appbar {
+  height: 9%;
+  margin: 0 0 1% 0; }
+
+.aside-left, .aside-right {
+  width: 24.5%;
+  height: 80%;
+  float: left;
+  margin: 0 0 2% 0; }
+
+.aside-left {
+  margin-left: .5%; }
+
+.aside-right {
+  margin-right: .5%; }
+
+.chat-container {
+  width: 48%;
+  height: 80%;
+  float: left;
+  margin: 0 1% 2% 1%; }
+* {
+  float: left;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Acme", sans-serif;
+  font-size: 1em;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  white-space: normal;
+  background: none;
+  color: #000; }
+
+form *:focus {
+  border: none;
+  outline: none; }
+
+head, script, link, style {
+  display: none; }
+
+p {
+  display: inline-block; }
+
+span, em, strong {
+  display: inline; }
+
+em {
+  font-style: italic; }
+
+strong {
+  font-weight: bold; }
+
+body {
+  background: #fff;
+  font-size: 16px; }
+
+blockquote {
+  border-left: 0.5em solid #e3e5e8; }
+
+h1 {
+  font-size: 3em; }
+
+h2 {
+  font-size: 2.25em; }
+
+h3 {
+  font-size: 1.8em; }
+
+h4 {
+  font-size: 1.5em; }
+
+h5 {
+  font-size: 1.28571em; }
+
+h6 {
+  font-size: 1.125em; }
+
+h5 {
+  font-size: 1.25em; }
+
+label {
+  font-size: 1.25em;
+  font-weight: bolder; }
+
+textarea, input {
+  padding: 0.5em;
+  border: 1px solid #8396A8;
+  resize: none; }
+  textarea:focus, input:focus {
+    border: 1px solid #77797B; }
+  textarea::placeholder, input::placeholder {
+    color: #8396A8; }
+
+button, input[type="submit"] {
+  background: #45E3F2;
+  padding: 0.5em;
+  border: none;
+  border-radius: 0.5em; }
+  button:hover, input[type="submit"]:hover {
+    background: #45C2EF; }
+  button:active, input[type="submit"]:active {
+    background: #6CE6E2; }
+
+.clear-float {
+  clear: both; }
+
+body {
+  height: 100%; }
