@@ -60,7 +60,7 @@ class Signin extends React.Component{
 
     return(
       <div className='signin-container'>
-        <h2>Welcome to Yaketyak!</h2>
+        <h2>Yaketyak!</h2>
         <img className='yak' src={yakBubble} />
         <form onSubmit={this.handleSubmit}>
           <input
