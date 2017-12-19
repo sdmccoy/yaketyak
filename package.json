@@ -8,7 +8,8 @@
     "lint": "eslint .",
     "test-watch": "test --watchAll",
     "watch": "webpack-dev-server --inline --hot",
-    "build": "webpack"
+    "build": "webpack",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -33,10 +34,12 @@
     "babel-preset-react": "^6.24.1",
     "clean-webpack-plugin": "^0.1.17",
     "css-loader": "^0.28.7",
+    "express": "^4.16.2",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.5",
     "html-webpack-plugin": "^2.30.1",
     "material-ui": "^0.20.0",
+    "morgan": "^1.9.0",
     "node-sass": "^4.7.2",
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
