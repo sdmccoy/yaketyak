@@ -2,10 +2,6 @@
 
 .signin-container{
 
-  // *{
-  //   margin: 0 0 2% 0;
-  // }
-
   h2{
     width: 36%;
     margin: 1% 30%;
@@ -25,13 +21,13 @@
 
   form{
     width: 36%;
-    margin: 1% 30%;
+    margin: 0% 30%;
     text-align: center;
     font-family: $font-main;
 
-  }
+    *{
+      margin: 0 0 1% 0;
+    }
 
-  input{
-    margin: 0 0 1% 0;
   }
 }
