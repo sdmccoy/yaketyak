@@ -1,0 +1,13 @@
+@import '../../style/_vars.scss';
+
+.signin-error-container{
+  width: 36%;
+  margin: 0% 30%;
+  border: 2px solid $error-box-border;
+  text-align: center;
+  padding: .5% 1%;
+
+  button{
+    margin: 1% 0;
+  }
+}

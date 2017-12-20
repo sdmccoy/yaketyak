@@ -1,6 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);@import url(https://fonts.googleapis.com/icon?family=Material+Icons);@import url(https://fonts.googleapis.com/css?family=Acme|Rajdhani);@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);@import url(https://fonts.googleapis.com/icon?family=Material+Icons);@import url(https://fonts.googleapis.com/css?family=Acme|Rajdhani);@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);@import url(https://fonts.googleapis.com/icon?family=Material+Icons);@import url(https://fonts.googleapis.com/css?family=Acme|Rajdhani);@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);@import url(https://fonts.googleapis.com/icon?family=Material+Icons);@import url(https://fonts.googleapis.com/css?family=Acme|Rajdhani);@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);@import url(https://fonts.googleapis.com/icon?family=Material+Icons);@import url(https://fonts.googleapis.com/css?family=Acme|Rajdhani);@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);@import url(https://fonts.googleapis.com/icon?family=Material+Icons);@import url(https://fonts.googleapis.com/css?family=Acme|Rajdhani);@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);@import url(https://fonts.googleapis.com/icon?family=Material+Icons);@import url(https://fonts.googleapis.com/css?family=Acme|Rajdhani);@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);@import url(https://fonts.googleapis.com/icon?family=Material+Icons);@import url(https://fonts.googleapis.com/css?family=Acme|Rajdhani);@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);@import url(https://fonts.googleapis.com/icon?family=Material+Icons);@import url(https://fonts.googleapis.com/css?family=Acme|Rajdhani);@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);@import url(https://fonts.googleapis.com/icon?family=Material+Icons);@import url(https://fonts.googleapis.com/css?family=Acme|Rajdhani);.signin-container * {
-  margin: 0 0 2% 0; }
-
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);@import url(https://fonts.googleapis.com/icon?family=Material+Icons);@import url(https://fonts.googleapis.com/css?family=Acme|Rajdhani);@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);@import url(https://fonts.googleapis.com/icon?family=Material+Icons);@import url(https://fonts.googleapis.com/css?family=Acme|Rajdhani);@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);@import url(https://fonts.googleapis.com/icon?family=Material+Icons);@import url(https://fonts.googleapis.com/css?family=Acme|Rajdhani);@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);@import url(https://fonts.googleapis.com/icon?family=Material+Icons);@import url(https://fonts.googleapis.com/css?family=Acme|Rajdhani);@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);@import url(https://fonts.googleapis.com/icon?family=Material+Icons);@import url(https://fonts.googleapis.com/css?family=Acme|Rajdhani);@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);@import url(https://fonts.googleapis.com/icon?family=Material+Icons);@import url(https://fonts.googleapis.com/css?family=Acme|Rajdhani);@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);@import url(https://fonts.googleapis.com/icon?family=Material+Icons);@import url(https://fonts.googleapis.com/css?family=Acme|Rajdhani);@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);@import url(https://fonts.googleapis.com/icon?family=Material+Icons);@import url(https://fonts.googleapis.com/css?family=Acme|Rajdhani);@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);@import url(https://fonts.googleapis.com/icon?family=Material+Icons);@import url(https://fonts.googleapis.com/css?family=Acme|Rajdhani);@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);@import url(https://fonts.googleapis.com/icon?family=Material+Icons);@import url(https://fonts.googleapis.com/css?family=Acme|Rajdhani);@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);@import url(https://fonts.googleapis.com/icon?family=Material+Icons);@import url(https://fonts.googleapis.com/css?family=Acme|Rajdhani);.signin-error-container {
+  width: 36%;
+  margin: 0% 30%;
+  border: 2px solid #FF9494;
+  text-align: center;
+  padding: .5% 1%; }
+  .signin-error-container button {
+    margin: 1% 0; }
 .signin-container h2 {
   width: 36%;
   margin: 1% 30%;
@@ -21,6 +26,9 @@
   margin: 1% 30%;
   text-align: center;
   font-family: "Acme", sans-serif; }
+
+.signin-container input {
+  margin: 0 0 1% 0; }
 .appbar {
   background-color: #45C2EF;
   box-shadow: 0px 1px 1px #ADAB7A; }
