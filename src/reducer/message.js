@@ -13,6 +13,7 @@ export default (state=[], action) => {
     return state.map(message => message.messageId === payload.messageId ? payload : message);
 
   case 'DELETE_MESSAGE':
+    console.log('PL =', payload);
     return  state.filter(message => message.messageId !== payload.messageId);
 
 

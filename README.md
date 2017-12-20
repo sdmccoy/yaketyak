@@ -4,7 +4,7 @@
 
 Front-End application utilizing the SendBird API to implement a live chat room.
 
-<img src='./src/assets/sblogo.png' width='200px' height='100px'/>
+<img src='./src/assets/docs/sblogo.png' width='200px' height='100px'/>
 
 [SendBird Site](https://sendbird.com/ "SendBird API")
 
@@ -97,12 +97,12 @@ Front-End application utilizing the SendBird API to implement a live chat room.
     - Yes, you can easily sign in as another user (for now)
 
 
-  - <img src='./src/assets/loginlp.png' width='600px' height='600px'/>
+  - <img src='./src/assets/docs/loginlp.png' width='600px' height='600px'/>
 
 ### Main Landing Page
 - Application will redirect to the /main route and load the chat components
 
-- <img src='./src/assets/mainlp.png' width='900px' height='500px'/>
+- <img src='./src/assets/docs/mainlp.png' width='900px' height='500px'/>
 
 - On load, the page will display
   - Dynamic welcome bar with nickname || userId (if no nickname)
@@ -115,24 +115,24 @@ Front-End application utilizing the SendBird API to implement a live chat room.
 ### Create a Channel Component
 
 - Button to show the create a channel form
-  - <img src='./src/assets/caccomp.png' width='250px' height='100px'/>
+  - <img src='./src/assets/docs/caccomp.png' width='250px' height='100px'/>
 
 
 - When clicked, the form enters from the left side. Options to create a new channel, or cancel the form
-  - <img src='./src/assets/cacform.png' width='250px' height='300px'/>
+  - <img src='./src/assets/docs/cacform.png' width='250px' height='300px'/>
 
 ### Open Channels Component
 
 - If there are no open channels
-  - <img src='./src/assets/ocnone.png' width='250px' height='100px'/>
+  - <img src='./src/assets/docs/ocnone.png' width='250px' height='100px'/>
 
 
 - If there are open channels. Click on one to enter.
-  - <img src='./src/assets/ocyes.png' width='250px' height='300px'/>
+  - <img src='./src/assets/docs/ocyes.png' width='250px' height='300px'/>
 
 
 - Click on trash icon to open delete options. Click on button to delete a channel.
-  - <img src='./src/assets/ocdelete.png' width='250px' height='400px'/>
+  - <img src='./src/assets/docs/ocdelete.png' width='250px' height='400px'/>
 
 ### Profile Component
 
@@ -142,49 +142,49 @@ Front-End application utilizing the SendBird API to implement a live chat room.
   - userId
   - signout button
   - edit profile (opens edit form)
-  - <img src='./src/assets/profilecomp.png' width='250px' height='300px'/>
+  - <img src='./src/assets/docs/profilecomp.png' width='250px' height='300px'/>
 
 
 - When edit button is clicked, the form enters from the right side. Options to create a nickname, load an avatar from a url, or cancel the form
-  - <img src='./src/assets/profileform.png' width='250px' height='300px'/>
+  - <img src='./src/assets/docs/profileform.png' width='250px' height='300px'/>
 
 
 ### Participant List Component
 
 - If you are not in a channel
-  - <img src='./src/assets/partlistnone.png' width='250px' height='100px'/>
+  - <img src='./src/assets/docs/partlistnone.png' width='250px' height='100px'/>
 
 
 - If you are in a channel, participants will be listed
-  - <img src='./src/assets/partlistcomp.png' width='250px' height='200px'/>
+  - <img src='./src/assets/docs/partlistcomp.png' width='250px' height='200px'/>
 
 
 ### Chat Component
 
 - If you are not in a channel
-  - <img src='./src/assets/chatnone.png' width='500px' height='100px'/>
+  - <img src='./src/assets/docs/chatnone.png' width='500px' height='100px'/>
 
 
 - If you are in a channel, previous messages will are loaded/listed. Title is context dynamic.
-  - <img src='./src/assets/chatyes.png' width='500px' height='300px'/>
+  - <img src='./src/assets/docs/chatyes.png' width='500px' height='300px'/>
 
 
 - Chat submit a message.
-  - <img src='./src/assets/chatsend.png' width='500px' height='100px'/>
+  - <img src='./src/assets/docs/chatsend.png' width='500px' height='100px'/>
 
 
 ### Message Component
 
 - Message from other users
-  - <img src='./src/assets/msgother.png' width='500px' height='100px'/>
+  - <img src='./src/assets/docs/msgother.png' width='500px' height='100px'/>
 
 
 - If you own the message, you can delete or edit with the icons.
-  - <img src='./src/assets/msgyours.png' width='500px' height='125px'/>
+  - <img src='./src/assets/docs/msgyours.png' width='500px' height='125px'/>
 
 
 - Edit a message.
-  - <img src='./src/assets/msgedit.png' width='500px' height='150px'/>
+  - <img src='./src/assets/docs/msgedit.png' width='500px' height='150px'/>
 
 ## TODO's
 
