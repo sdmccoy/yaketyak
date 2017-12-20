@@ -19,6 +19,7 @@ let plugins = [
     __APP_ID__: JSON.stringify(process.env.APP_ID),
     __API_TOKEN__: JSON.stringify(process.env.API_TOKEN),
     __API_CON__: JSON.stringify(process.env.API_CONNECT_URL),
+    __SIGNIN_PW__: JSON.stringify(process.env.SIGNIN_PW),
   }),
 ];
 

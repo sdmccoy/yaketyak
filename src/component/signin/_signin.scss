@@ -2,9 +2,9 @@
 
 .signin-container{
 
-  *{
-    margin: 0 0 2% 0;
-  }
+  // *{
+  //   margin: 0 0 2% 0;
+  // }
 
   h2{
     width: 36%;
@@ -29,5 +29,9 @@
     text-align: center;
     font-family: $font-main;
 
+  }
+
+  input{
+    margin: 0 0 1% 0;
   }
 }
