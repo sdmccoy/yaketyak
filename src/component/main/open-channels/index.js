@@ -72,29 +72,9 @@ class OpenChannels extends React.Component{
       channel.enter((response, error) => {
         if(error) return console.error(error);
 
-        let ChannelHandler = new sb.ChannelHandler();
-
-        //sending message to recieving socket handler
-        ChannelHandler.onMessageReceived = (channel, message) => {
-          //set app store for receiving user socket to see sent msg
-          addNewMessage(message);
-        };
-
-        sb.addChannelHandler('received message', ChannelHandler);
-
-        ChannelHandler.onMessageUpdated = (channel, message) => {
-          //set app store for receiving user socket to see sent msg
-          updateMessage(message);
-        };
-
-        sb.addChannelHandler('received message', ChannelHandler);
-
-        //remove handler kills the action, todo: fix
-        // sb.removeChannelHandler('received message');
-
         //set app store to entered channel
         this.props.setEnteredChannel(channel);
-        //fetch the current participantList to append later
+        //fetch the current participantList to append
         this.fetchParticipantList(channel);
         //fetch 30 previous messages from channel
         this.fetchPreviousMessageList(channel);

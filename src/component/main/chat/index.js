@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import SendBird from 'sendbird';
 import UpdateMessageForm from '../update-message-form';
 import * as channelMessageActions from '../../../action/message.js';
+import * as participantListActions from '../../../action/participant-list.js';
 //tracking
 import track from 'react-tracking';
 //style
@@ -32,8 +33,30 @@ class Chat extends React.Component{
   }
 
   //once user enters, set chat state to current channel instance
-  componentWillReceiveProps(props){
-    this.setState({currentChannel: props.enteredChannel});
+  componentWillReceiveProps(newProps){
+    if(this.props.enteredChannel === newProps.enteredChannel) return;
+    sb.removeChannelHandler(`Chat ${this.props.enteredChannel.name}`);
+
+    this.setState({currentChannel: newProps.enteredChannel});
+
+    let ChannelHandler = new sb.ChannelHandler();
+
+    //add user to participantList when entering a chat channel. 
+    ChannelHandler.onUserEntered = (openChannel, user) => {
+      this.props.addParticipantToList(user);
+    };
+    //sending message to recieving socket handler
+    ChannelHandler.onMessageReceived = (channel, message) => {
+      //set app store for receiving user socket to see sent msg
+      this.props.addNewMessage(message);
+    };
+    ChannelHandler.onMessageUpdated = (channel, message) => {
+      //set app store for receiving user socket to see sent msg
+      console.log('update msg = ', message);
+      this.props.updateMessage(message);
+    };
+
+    sb.addChannelHandler(`Chat ${newProps.enteredChannel.name}`, ChannelHandler);
   }
 
   //set state as input event changes
@@ -69,18 +92,18 @@ class Chat extends React.Component{
 
     let channel = this.state.currentChannel;
     let deleteMessage = this.props.deleteMessage;
-    console.log('msg = ', message);
+    console.log('msg outside = ', message);
     channel.deleteMessage(message, function(response, error){
 
       if (error) return console.error(error);
 
+      console.log('msg inside DELETE = ', message);
       let ChannelHandler = new sb.ChannelHandler();
 
-      deleteMessage(message);
       ChannelHandler.onMessageDeleted = function(channel, message){
         //set app store for receiving user socket to see deleted msg
-        console.log('msg 2 = ', message);
-        // deleteMessage(message);
+        console.log('msg inside HANDLER = ', message);
+        deleteMessage(message);
       };
 
       sb.addChannelHandler('message deleted', ChannelHandler);
@@ -107,7 +130,7 @@ class Chat extends React.Component{
                 {user.userId === message.sender.userId ?
                   <div className='current-user-message'>
                     <img src={message.sender.profileUrl} />
-                    <h4>{message.sender.userId}</h4>
+                    <h4>{message.sender.nickname || message.sender.userId}</h4>
                     <p>{message.message}</p>
                     <i className="material-icons"
                       onClick= {() => this.handleMessageDelete(message)}
@@ -122,7 +145,7 @@ class Chat extends React.Component{
                   :
                   <div className='other-user-message'>
                     <img src={message.sender.profileUrl} />
-                    <h4>{message.sender.userId}</h4>
+                    <h4>{message.sender.nickname || message.sender.userId}</h4>
                     <p>{message.message}</p>
                   </div>
                 }
@@ -164,5 +187,6 @@ const mapDispatchToProps = dispatch => ({
   addNewMessage: message => dispatch(channelMessageActions.addNewMessage(message)),
   deleteMessage: message => dispatch(channelMessageActions.deleteMessage(message)),
   updateMessage: message => dispatch(channelMessageActions.updateMessage(message)),
+  addParticipantToList: user => dispatch(participantListActions.addParticipantToList(user)),
 });
 export default connect(mapStateToProps, mapDispatchToProps)(Chat);
