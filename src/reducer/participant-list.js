@@ -5,6 +5,9 @@ export default (state=[], action) => {
   case 'SET_PARTICIPANTLIST':
     return payload;
 
+  case 'ADD_PARTICIPANT':
+    return [...state, payload];
+
   default: return state;
   }
 };
