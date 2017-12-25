@@ -41,7 +41,7 @@ class Chat extends React.Component{
 
     let ChannelHandler = new sb.ChannelHandler();
 
-    //add user to participantList when entering a chat channel. 
+    //add user to participantList when entering a chat channel.
     ChannelHandler.onUserEntered = (openChannel, user) => {
       this.props.addParticipantToList(user);
     };
@@ -52,8 +52,13 @@ class Chat extends React.Component{
     };
     ChannelHandler.onMessageUpdated = (channel, message) => {
       //set app store for receiving user socket to see sent msg
-      console.log('update msg = ', message);
       this.props.updateMessage(message);
+    };
+    //delete message handler
+    ChannelHandler.onMessageDeleted = (channel, message) => {
+      //set app store for receiving user socket to see deleted msg
+      let id = parseInt(message);
+      this.props.deleteMessage(id);
     };
 
     sb.addChannelHandler(`Chat ${newProps.enteredChannel.name}`, ChannelHandler);
@@ -92,23 +97,13 @@ class Chat extends React.Component{
 
     let channel = this.state.currentChannel;
     let deleteMessage = this.props.deleteMessage;
-    console.log('msg outside = ', message);
-    channel.deleteMessage(message, function(response, error){
+    channel.deleteMessage(message, (response, error) => {
 
       if (error) return console.error(error);
-
-      console.log('msg inside DELETE = ', message);
-      let ChannelHandler = new sb.ChannelHandler();
-
-      ChannelHandler.onMessageDeleted = function(channel, message){
-        //set app store for receiving user socket to see deleted msg
-        console.log('msg inside HANDLER = ', message);
-        deleteMessage(message);
-      };
-
-      sb.addChannelHandler('message deleted', ChannelHandler);
-
-
+      //send only message id to match handler payload above
+      console.log('messageid = ', message.messageId);
+      console.log('type sender = ', typeof message.messageId);
+      deleteMessage(message.messageId);
     });
   }
 
