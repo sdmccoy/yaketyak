@@ -14,7 +14,7 @@ export default (state=[], action) => {
 
   case 'DELETE_MESSAGE':
     console.log('PL =', payload);
-    return  state.filter(message => message.messageId !== payload.messageId);
+    return  state.filter(message => message.messageId !== payload);
 
 
   default: return state;
