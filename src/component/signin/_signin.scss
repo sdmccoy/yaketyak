@@ -2,15 +2,19 @@
 
 .signin-container{
 
-  h2{
-    width: 36%;
-    margin: 1% 30%;
+  header{
+    width: 100%;
+    margin: 0;
     text-align: center;
     font-family: $font-main;
-    border-radius: 5px;
     background-color: $color-primary;
-    color: $color-white;
     box-shadow: 1px 2px 3px rgba($color-black, 0.3), 0 0 40px rgba($color-black, 0.1) inset;
+
+    h1, h4{
+      color: $color-white;
+      padding-right: 50px;
+      text-shadow: 0px 1px 2px $color-yakbrown;
+    }
   }
 
   img{

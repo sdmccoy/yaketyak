@@ -97,12 +97,12 @@ Front-End application utilizing the SendBird API to implement a live chat room.
     - Yes, you can easily sign in as another user (for now)
 
 
-  - <img src='./src/assets/docs/loginlp.png' width='600px' height='600px'/>
+  - <img src='./src/assets/docs/loginlp.png' width='900px' height='600px'/>
 
 ### Main Landing Page
 - Application will redirect to the /main route and load the chat components
 
-- <img src='./src/assets/docs/mainlp.png' width='900px' height='500px'/>
+- <img src='./src/assets/docs/mainlp.png' width='900px' height='600px'/>
 
 - On load, the page will display
   - Dynamic welcome bar with nickname || userId (if no nickname)
