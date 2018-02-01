@@ -1,6 +1,7 @@
 @import '../../style/_vars.scss';
 
 .signin-container{
+  height: 100vh;
 
   header{
     width: 100%;
@@ -20,7 +21,7 @@
   img{
     width: 40%;
     height: 50%;
-    margin: 1% 30%;
+    margin: 3% 30%;
   }
 
   form{
