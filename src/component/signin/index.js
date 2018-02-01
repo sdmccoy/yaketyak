@@ -105,7 +105,7 @@ class Signin extends React.Component{
             />
             <input
               name='passWord'
-              type='text'
+              type='password'
               placeholder='Password'
               onChange={this.handleChange}
               value={this.state.passWord}

@@ -6,30 +6,30 @@
   padding: .5% 1%; }
   .signin-error-container button {
     margin: 1% 0; }
-.signin-container header {
-  width: 100%;
-  margin: 0;
-  text-align: center;
-  font-family: "Acme", sans-serif;
-  background-color: #45C2EF;
-  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
-  .signin-container header h1, .signin-container header h4 {
-    color: #fff;
-    padding-right: 50px;
-    text-shadow: 0px 1px 2px #473421; }
-
-.signin-container img {
-  width: 40%;
-  height: 50%;
-  margin: 1% 30%; }
-
-.signin-container form {
-  width: 36%;
-  margin: 0% 30%;
-  text-align: center;
-  font-family: "Acme", sans-serif; }
-  .signin-container form * {
-    margin: 0 0 1% 0; }
+.signin-container {
+  height: 100vh; }
+  .signin-container header {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    font-family: "Acme", sans-serif;
+    background-color: #45C2EF;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+    .signin-container header h1, .signin-container header h4 {
+      color: #fff;
+      padding-right: 50px;
+      text-shadow: 0px 1px 2px #473421; }
+  .signin-container img {
+    width: 40%;
+    height: 50%;
+    margin: 3% 30%; }
+  .signin-container form {
+    width: 36%;
+    margin: 0% 30%;
+    text-align: center;
+    font-family: "Acme", sans-serif; }
+    .signin-container form * {
+      margin: 0 0 1% 0; }
 .appbar {
   background-color: #45C2EF;
   box-shadow: 0px 1px 1px #ADAB7A; }
@@ -40,7 +40,7 @@
   .appbar h3 {
     width: 70%;
     text-align: center;
-    padding: 12px 0 0 225px;
+    padding: 3px 0 0 225px;
     color: #fff;
     font-size: 2.8em;
     text-shadow: 0px 1px 2px #473421; }
@@ -87,7 +87,7 @@
       text-align: right; }
   .open-channels-container h6 {
     font-style: italic;
-    padding: 5%; }
+    background-color: #FF9494; }
 .profile-container {
   height: 50%; }
   .profile-container * {
@@ -172,14 +172,16 @@ i#update-send.material-icons {
 .chat-submit {
   position: absolute;
   bottom: 0;
-  margin: 1% 0; }
+  margin: 1% 0;
+  background-color: #fff; }
   .chat-submit input {
     width: 87%;
     margin: 0 1%; }
   .chat-submit .send-message-button {
     width: 8%; }
 .participant-list-container {
-  height: 50%; }
+  height: 50%;
+  overflow: auto; }
   .participant-list-container .title {
     background-color: #45E3F2; }
     .participant-list-container .title h5 {
@@ -193,22 +195,22 @@ i#update-send.material-icons {
     font-style: italic;
     padding: 5%; }
 .main-container {
-  width: 100%;
-  height: 771px; }
+  width: 100vw;
+  height: 100vh; }
 
 .aside-left, .aside-right, .chat-container {
   box-shadow: 1px 1px 15px #ADAB7A;
   border-radius: .5em .5em 0 0; }
 
 .appbar {
-  height: 9%;
+  height: 10vh;
   margin: 0 0 1% 0; }
 
 .aside-left, .aside-right {
   width: 24.5%;
-  height: 80%;
+  height: 85vh;
   float: left;
-  margin: 0 0 2% 0; }
+  margin: 0 0 1% 0; }
 
 .aside-left {
   margin-left: .5%; }
@@ -218,9 +220,9 @@ i#update-send.material-icons {
 
 .chat-container {
   width: 48%;
-  height: 80%;
+  height: 85vh;
   float: left;
-  margin: 0 1% 2% 1%; }
+  margin: 0 1% 1% 1%; }
 * {
   float: left;
   display: block;

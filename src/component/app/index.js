@@ -22,7 +22,7 @@ class App extends React.Component{
     return(
       <Provider store={store}>
         <MuiThemeProvider>
-          <div className='app-container'>
+          <div className='app-container' >
             <Route exact path='/' component={Signin} />
             <Route exact path='/main' component={Main} />
           </div>

@@ -2,6 +2,7 @@
 
 .participant-list-container{
   height: 50%;
+  overflow: auto;
 
   .title{
     background-color: $color-secondary;
